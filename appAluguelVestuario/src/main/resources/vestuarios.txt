@@ -1,0 +1,9 @@
+R;Paletó Summer;1600;2;G;Poliéster;false
+R;Paletó Grafite;650;2;M;Brim;true
+R;Vestido Floral;500;1;P;Veludo;true
+C;Mocassino;100;1;38;Baixo;Preto
+C;Bico quadrado;90;2;41;Baixo;Preto
+C;Scarpin;120;3;34;15cm;Prata
+A;Gucci N;30;3;VX 1300;Colar;Prata com brilhantes
+A;Ear GG;10;20;AB Longo;Brincos;Prata
+A;WST;20;1;PL 123;Pulseira;Prata com brilhantes

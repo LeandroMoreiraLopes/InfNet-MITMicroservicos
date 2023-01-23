@@ -1,0 +1,3 @@
+Paletó Summer;1600;2;G;Poliéster;false
+Paletó Grafite;650;2;M;Brim;true
+Vestido Floral;500;1;P;Veludo;true

@@ -1,0 +1,10 @@
+AA;Aluguel 1;Paleto Spring; 1600.00;2022/11/12;Leandro;11111111111;1981/09/09;
+R;Paletó Summer;1600;2;G;Poliéster;false
+AA;Aluguel 2;Paleto Black; 650.00;2022/11/12;Gabriel;22222222222;2007/10/01;
+R;Paletó Grafite;650;2;M;Brim;true
+C;Bico quadrado;90;2;41;Baixo;Preto
+AA;Aluguel 3;Vestido Floral; 500.00;2022/11/12;Enilda;33333333333;1948/10/11;
+R;Vestido Floral;500;1;P;Veludo;true
+C;Scarpin;120;3;34;15cm;Prata
+A;Ear GG;10;20;AB Longo;Brincos;Prata
+A;WST;20;1;PL 123;Pulseira;Prata com brilhantes

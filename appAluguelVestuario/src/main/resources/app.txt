@@ -1,0 +1,29 @@
+P;Projeto de Gestão de Vestuário;Aluguel de roupas, calçados e acessórios
+C;Acessorio
+A;descricao;String;Descricao sobre o acessorio
+A;tipo;String;Indica o tipo de acessorio
+A;material;String;Indica o material do acessorio
+C;Aluguel
+A;itemAlugado;String;Item alugado
+A;valorTotal;double;Valor total do aluguel
+A;dataEvento;localDateTime;Data do Evento
+C;Calcado
+A;tamanho;String;Tamanho do calcado
+A;tipoDeSalto;String;Tipo de salto do calcado
+A;cor;String;Cor do calcado
+C;Cliente
+A;nome;String;Nome do cliente
+A;cpf;String;CPF do cliente
+A;dataNascimento;localDateTime;Data de nascimento
+C;Roupa
+A;tamanho;String;Tamanho da roupa
+A;tipoDeTecido;String;Tipo de tecido da roupa
+A;paraNoite;boolean;Indicativo se a roupa é indicada para noite
+C;Usuario
+A;nome;String;Nome do usuario
+A;email;String;E-mail do usuario
+A;senha;String;Senha do usuario
+C;Vestuario
+A;nome;String;Nome do vestuario
+A;valorDoAluguel;double;Valor do aluguel do vestuario
+A;qtdDias;int;Quantidade de dias de aluguel

@@ -1,0 +1,3 @@
+Mocassino;100;1;38;Baixo;Preto
+Bico quadrado;90;2;41;Baixo;Preto
+Scarpin;120;3;34;15cm;Prata
