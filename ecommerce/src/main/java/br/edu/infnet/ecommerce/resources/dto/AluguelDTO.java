@@ -1,4 +1,4 @@
-package br.edu.infnet.eccomerce.resources.dto;
+package br.edu.infnet.ecommerce.resources.dto;
 
 import java.util.List;
 
