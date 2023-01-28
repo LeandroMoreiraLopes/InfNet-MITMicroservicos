@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import br.edu.infnet.appAluguelVestuario.model.domain.Usuario;
 import br.edu.infnet.appAluguelVestuario.model.repository.UsuarioRepository;
-import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
 
 @Service
 public class UsuarioService {
@@ -20,7 +19,7 @@ public class UsuarioService {
 	private static Map<String, Usuario> mapaUsuario = new HashMap<String, Usuario>();
 	
 	public Usuario validar(String email, String senha) {
-		Usuario usuario = mapaUsuario.get(email); 
+		Usuario usuario = usuarioRepository.findByEmail(email); 
 		
 		if (usuario != null && senha.equalsIgnoreCase(usuario.getSenha())){
 			return usuario;
@@ -33,7 +32,7 @@ public class UsuarioService {
 		
 		mapaUsuario.put(usuario.getEmail(), usuario);
 		
-		AppImpressao.relatorio("Inclusão do usuário " + usuario.getNome() + " realizada com sucesso", usuario);
+		//AppImpressao.relatorio("Inclusão do usuário " + usuario.getNome() + " realizada com sucesso", usuario);
 	}
 	
 	public void excluir(String email) {

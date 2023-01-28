@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import br.edu.infnet.appAluguelVestuario.model.domain.Aluguel;
 import br.edu.infnet.appAluguelVestuario.model.domain.Usuario;
 import br.edu.infnet.appAluguelVestuario.model.repository.AluguelRepository;
-import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
+//import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
 
 @Service
 public class AluguelService {
@@ -20,7 +20,7 @@ public class AluguelService {
 		
 		aluguelRepository.save(aluguel);
 		
-		AppImpressao.relatorio("Inclusão do aluguel " + aluguel.getItemAlugado() + " realizada com sucesso", aluguel);
+		//AppImpressao.relatorio("Inclusão do aluguel " + aluguel.getItemAlugado() + " realizada com sucesso", aluguel);
 	}
 	
 	public Collection<Aluguel> obterLista(){

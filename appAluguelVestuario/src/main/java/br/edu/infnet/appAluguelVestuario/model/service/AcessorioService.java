@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import br.edu.infnet.appAluguelVestuario.model.domain.Acessorio;
 import br.edu.infnet.appAluguelVestuario.model.domain.Usuario;
 import br.edu.infnet.appAluguelVestuario.model.repository.AcessorioRepository;
-import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
 
 @Service
 public class AcessorioService {
@@ -26,7 +25,7 @@ public class AcessorioService {
 		//acessorio.setId(id++);
 		//mapaAcessorio.put(acessorio.getId(), acessorio);
 		
-		AppImpressao.relatorio("Inclusão de acessorio " + acessorio.getNome() + " realizada com sucesso", acessorio);
+		//AppImpressao.relatorio("Inclusão de acessorio " + acessorio.getNome() + " realizada com sucesso", acessorio);
 	}
 	
 	public Collection<Acessorio> obterLista(){

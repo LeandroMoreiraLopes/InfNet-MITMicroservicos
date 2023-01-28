@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import br.edu.infnet.appAluguelVestuario.model.domain.Cliente;
 import br.edu.infnet.appAluguelVestuario.model.domain.Usuario;
 import br.edu.infnet.appAluguelVestuario.model.repository.ClienteRepository;
-import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
 
 @Service
 public class ClienteService {
@@ -26,7 +25,7 @@ public class ClienteService {
 //		cliente.setId(id++);
 //		mapaCliente.put(cliente.getId(), cliente);
 		
-		AppImpressao.relatorio("Inclusão de cliente " + cliente.getNome() + " realizada com sucesso", cliente);
+		//AppImpressao.relatorio("Inclusão de cliente " + cliente.getNome() + " realizada com sucesso", cliente);
 	}
 	
 	public Collection<Cliente> obterLista(){

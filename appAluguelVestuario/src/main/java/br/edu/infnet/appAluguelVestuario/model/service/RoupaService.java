@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import br.edu.infnet.appAluguelVestuario.model.domain.Roupa;
 import br.edu.infnet.appAluguelVestuario.model.domain.Usuario;
 import br.edu.infnet.appAluguelVestuario.model.repository.RoupaRepository;
-import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
 
 @Service
 public class RoupaService {
@@ -26,7 +25,7 @@ public class RoupaService {
 		//roupa.setId(id++);
 		//mapaRoupa.put(roupa.getId(), roupa);
 		
-		AppImpressao.relatorio("Inclusão da roupa " + roupa.getNome() + " realizada com sucesso", roupa);
+		//AppImpressao.relatorio("Inclusão da roupa " + roupa.getNome() + " realizada com sucesso", roupa);
 	}
 	
 	public Collection<Roupa> obterLista(){

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import br.edu.infnet.appAluguelVestuario.model.domain.Calcado;
 import br.edu.infnet.appAluguelVestuario.model.domain.Usuario;
 import br.edu.infnet.appAluguelVestuario.model.repository.CalcadoRepository;
-import br.edu.infnet.appAluguelVestuario.model.test.AppImpressao;
 
 @Service
 public class CalcadoService {
@@ -26,7 +25,7 @@ public class CalcadoService {
 		//calcado.setId(id++);
 		//mapaCalcado.put(calcado.getId(), calcado);
 		
-		AppImpressao.relatorio("Inclusão do calçado " + calcado.getNome() + " realizada com sucesso", calcado);
+		//AppImpressao.relatorio("Inclusão do calçado " + calcado.getNome() + " realizada com sucesso", calcado);
 	}
 	
 	public Collection<Calcado> obterLista(){
