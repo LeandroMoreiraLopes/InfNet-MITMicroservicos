@@ -1,4 +1,4 @@
-package br.edu.infnet.clientes.modelo.services;
+package br.edu.infnet.clientes.model.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

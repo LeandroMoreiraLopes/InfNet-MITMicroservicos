@@ -2,6 +2,8 @@ package br.edu.infnet.ecommerce.resources;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +23,8 @@ import br.edu.infnet.ecommerce.resources.dto.VestuarioDTO;
 @RequestMapping("/alugueis")
 public class AluguelResources {
 	
+	private static Logger log = LoggerFactory.getLogger(AluguelResources.class);
+	
 	@Autowired
 	private RestTemplate restTemplate;
 	
@@ -33,16 +37,20 @@ public class AluguelResources {
 	@PostMapping
 	public AluguelResponseDTO efetuarAluguel(@RequestBody AluguelDTO aluguelDTO)
 	{
+		log.info("Solicitacao para aluguel: {}", aluguelDTO);
+		
+		if(log.isDebugEnabled())
+		{
+			log.debug("Debug ligado");
+		}
 		ClienteDTO clienteDTO = restTemplate.getForObject(clienteApiUrl +
 								aluguelDTO.getClienteId(), ClienteDTO.class);
 		
-		System.out.println(clienteDTO);
-		System.out.println(aluguelDTO);
+		log.info("Chamada a API de clientes realizada: {}", clienteDTO);
 		
 		ResponseEntity<List<VestuarioDTO>> vestuarios = vestuarioClient.getVestuarios();
 		System.out.println(vestuarios.getBody());
 		
 		return new AluguelResponseDTO(clienteDTO, vestuarios.getBody());
 	}
-
 }
